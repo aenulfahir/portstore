@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:myapp/views/buyers/nav_screens/widgets/search_Input_widget.dart';
+import 'package:myapp/views/buyers/nav_screens/widgets/welcome_text_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -15,51 +16,10 @@ class HomeScreen extends StatelessWidget {
           SizedBox(
             height: 14,
           ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(10),
-            child: TextField(
-              decoration: InputDecoration(
-                fillColor: Colors.white,
-                filled: true,
-                hintText: 'Search For Products',
-                border: OutlineInputBorder(borderSide: BorderSide.none),
-                prefixIcon: Padding(
-                  padding: const EdgeInsets.all(14.0),
-                  child: SvgPicture.asset(
-                    'assets/icons/search.svg',
-                    width: 10,
-                  ),
-                ),
-              ),
-            ),
-          )
+          SearchInputWidget()
         ],
       ),
     );
   }
 }
 
-class WelcomeText extends StatelessWidget {
-  const WelcomeText({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-      Text(
-        'Howdy, What Are You\n Looking For 👀',
-        style: TextStyle(
-          fontSize: 19,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-      Container(
-        child: SvgPicture.asset(
-          'assets/icons/cart.svg',
-          width: 20,
-        ),
-      )
-    ]);
-  }
-}
