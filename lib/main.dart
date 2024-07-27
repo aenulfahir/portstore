@@ -7,6 +7,7 @@ import 'package:myapp/views/buyers/main_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   Platform.isAndroid
       ? await Firebase.initializeApp(
           options: const FirebaseOptions(
