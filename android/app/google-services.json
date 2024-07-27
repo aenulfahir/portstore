@@ -1,0 +1,30 @@
+
+{
+  "project_info": {
+    "project_number": "520442974585",
+    "project_id": "port-store-79f96",
+    "storage_bucket": "port-store-79f96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520442974585:android:8f7b72f4fda0da219f9fa8",
+        "android_client_info": {
+          "package_name": "com.aenul.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqzyeHXf361YZ1tUImRc1qpBM9f3SjyuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
